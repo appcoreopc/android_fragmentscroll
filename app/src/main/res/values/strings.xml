@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="moov_fragment">Moov fragment</string>
+    <string name="hello_blank_fragment">Moov fragment2</string>
+    <string name="howitworks_fragment">how it works fragment</string>
+
+</resources>
