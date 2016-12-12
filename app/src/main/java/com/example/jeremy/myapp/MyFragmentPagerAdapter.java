@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 /**
- * Created by Jeremy on 12/10/2016.
+ * Created by Jeremy on 12/10/2016
  */
 
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
@@ -16,16 +16,14 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        switch (position)
-        {
-            case 0:
+        if (position == 0)
                 return HowItWorks_Fragment.newInstance("how it works", "how it works");
-            case 1:
+        else if (position == 1)
                 return Fragment_Moov.newInstance("Moov", "Moov");
-            case 2:
-                return Fragment_Moov.newInstance("Moov", "Moov");
-        }
-        return Fragment_Moov.newInstance("Moov", "Moov");
+        else if (position == 2)
+                return Fragment_WorkOut.newInstance("Moov", "Moov");
+        else
+            return HowItWorks_Fragment.newInstance("how it works", "how it works");
     }
 
     @Override

@@ -15,7 +15,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements Fragment_Moov.OnFragmentInteractionListener, HowItWorks_Fragment.OnFragmentInteractionListener  {
+public class MainActivity extends AppCompatActivity implements Fragment_Moov.OnFragmentInteractionListener, HowItWorks_Fragment.OnFragmentInteractionListener, Fragment_WorkOut.OnFragmentInteractionListener {
 
     private static final int NUM_PAGES = 5;
     private ViewPager mPager;
